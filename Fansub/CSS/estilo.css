@@ -1,0 +1,193 @@
+
+body {
+  background: #e7b9d057;
+  font-family: "Dancing Script", cursive;
+ /* margin: 25px 100px 75px 0px;
+  display: block;*/
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+ 
+}
+
+header {
+  width: 100%;
+ /* padding: 0 40px;*/
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*MENU INICIO*/
+
+.navbar {
+  width: 100% ;
+  padding: 10px 10px 10px 0px;
+  background-color: rgba(89, 28, 124, 0.212);
+  display:block;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover {
+  color: rgb(191, 130, 226);
+  padding-right: 10px;
+}
+
+#check {
+  display: none;
+}
+
+
+/*MENU FIM*/
+
+/*LOGO BLUE HOPE*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px 0px 0px;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+}
+/*FIM LOGO
+
+INICIO TITULO*/
+.title {
+  margin-left: 20px;
+  margin: 150px 0px 0px 0px;
+  font-size: 40px;
+  color: rgb(157, 58, 177);
+}
+
+h1 {
+  color: rgb(197, 0, 236);
+  margin-left: 20px;
+  font-size: 40px;
+}
+/*FIM TITULI*/
+
+
+/*INICIO CARD*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 250px 50px 250px 50px;
+  display: flexbox;
+  background-color: #caa4cf;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 10%;
+}
+
+.card p {
+  text-indent: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 0px;
+  font-size: 25px;
+}
+
+/*FIM CARD*/
+
+/*INICIO FOOTER*/
+
+footer {
+  background-color: rgba(89, 28, 124, 0.212);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+.material-symbols-outlined {
+  color: rgb(0, 0, 0);
+  margin-left: 35px;
+}
+
+/*FIM FOOTER*/
+
+/* Responsiveness */
+@media (min-width: 600px) {
+  .navbar a {
+    margin: 0 2.5rem;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    margin: 100px 0;
+  }
+
+  .title {
+    margin-top: 150px;
+  }
+
+  .card {
+    width: 250px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .navbar a {
+    margin-left: 2.5rem;
+  }
+
+  .logo-container {
+    margin: 100px 0;
+  }
+
+  .title {
+    margin-top: 0;
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+

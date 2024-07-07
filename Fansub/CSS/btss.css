@@ -1,0 +1,163 @@
+/* Body e Fontes */
+body {
+  background: linear-gradient(to bottom right,#003cff94, #351133);
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1, .title {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin: 10;
+}
+
+p {
+  text-align: left;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 10px 0;
+  background-color:rgba(255, 255, 255, 0.212);
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s ease;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: rgb(191, 130, 226);
+  padding-right: 10px;
+}
+
+#check {
+  display: none;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px 0px 25px;
+}
+
+.logo {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* Subtítulos */
+h2 {
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel{
+  position: relative;
+  width: 80%; /* Ajuste a largura do contêiner do carrossel conforme necessário */
+  max-width: 1200px; /* Ajuste o valor conforme necessário */
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.carousel-container { 
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  min-width: 300px;
+  min-height: 200px;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 24px;
+  border-radius: 30px;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3, .card h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.card p {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to bottom right,#003cff94, #351133);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+}
